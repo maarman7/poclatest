@@ -1,0 +1,64 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Enter the details below",
+            "weight": "bolder",
+            "size": "medium"
+        },
+        {
+            "type": "Input.Text",
+            "id": "materialNumber",
+            "placeholder": "Enter material number",
+            "label": "Material Number"
+        },
+        {
+            "type": "Input.Text",
+            "id": "plant",
+            "placeholder": "Enter plant",
+            "label": "Plant"
+        },
+        {
+            "type": "Input.Text",
+            "id": "storageLocation",
+            "placeholder": "Enter storage location",
+            "label": "Storage Location"
+        },
+        {
+            "type": "Input.Text",
+            "id": "gpid",
+            "placeholder": "Enter GPID",
+            "label": "GPID"
+        },
+        {
+            "type": "Input.Text",
+            "id": "name",
+            "placeholder": "Enter your name",
+            "label": "Name"
+        },
+        {
+            "type": "Input.Number",
+            "id": "numberOfItems",
+            "placeholder": "Enter number of items",
+            "label": "Number of Items"
+        },
+        {
+            "type": "Input.ChoiceSet",
+            "id": "transactionType",
+            "label": "Transaction Type",
+            "choices": [
+                { "title": "Work Order", "value": "261" },
+                { "title": "Cost Center", "value": "201" }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Submit"
+        }
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0"
+}

@@ -1,0 +1,41 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "Input.Text",
+            "id": "gpid",
+            "placeholder": "Enter your GPID"
+        },
+        {
+            "type": "Input.Text",
+            "id": "name",
+            "placeholder": "Enter your name"
+        },
+        {
+            "type": "Input.Number",
+            "id": "numberOfMaterials",
+            "placeholder": "Enter the number of materials to remove"
+        },
+        {
+            "type": "Input.ChoiceSet",
+            "id": "orderType",
+            "choices": [
+                {
+                    "title": "Work Order",
+                    "value": "Work Order"
+                },
+                {
+                    "title": "Cost Order",
+                    "value": "Cost Order"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Submit"
+        }
+    ],
+    "version": "1.0"
+}

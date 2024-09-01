@@ -1,0 +1,30 @@
+{
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "type": "AdaptiveCard",
+    "version": "1.3",
+    "body": [
+        {
+            "type": "TextBlock",
+            "text": "Welcome, how can I help you today? Would you like to remove a material from stock or return an item to stock?",
+            "wrap": true,
+            "size": "Medium",
+            "weight": "Bolder"
+        }
+    ],
+    "actions": [
+        {
+            "type": "Action.Submit",
+            "title": "Return",
+            "data": {
+                "action": "return"
+            }
+        },
+        {
+            "type": "Action.Submit",
+            "title": "Remove",
+            "data": {
+                "action": "remove"
+            }
+        }
+    ]
+}
